@@ -1,7 +1,28 @@
 :root {
+    /* Primary colors */
+    --light-red: 0, 100%, 67%;
+    --orangey-yellow: 39, 100%, 56%;
+    --green-teal: 166, 100%, 37%;
+    --cobalt-blue: 234, 85%, 45%;
+
+    /* background  gradients*/
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --background-gradient: linear-gradient(
+        to bottom,
+        var(--light-slate-blue),
+        var(--light-royal-blue)
+    );
+
+    /* Circle background gradient */
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral colors */
     --white: hsl(0, 0%, 100%);
-    --blue: rgb(102, 105, 252);
-    --dark-blue: rgb(61, 97, 235);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
 }
 
 * {
@@ -39,14 +60,14 @@ h1 {
     margin: 0 1rem;
     max-width: 45em;
     border-radius: 2rem;
-    box-shadow: 0.5rem 1rem 3rem rgb(48, 59, 90, 0.2);
+    box-shadow: 0.5rem 1rem 3rem var(--dark-gray-blue);
 }
 
 .result-card {
-    color: aliceblue;
+    color: var(--light-lavender);
     text-align: center;
     padding: 2.5rem 4rem;
-    background: linear-gradient(to bottom, var(--blue), var(--dark-blue));
+    background: var(--background-gradient);
     border-radius: inherit;
     display: flex;
     flex-direction: column;
@@ -54,9 +75,9 @@ h1 {
     justify-content: space-between;
 }
 
-h1.result {
+/* h1.result {
     color: aliceblue;
-}
+} */
 
 .score {
     display: grid;
@@ -66,8 +87,8 @@ h1.result {
     margin-inline: auto;
     background: linear-gradient(
         to bottom,
-        rgb(46, 43, 233),
-        rgb(120, 87, 255, 0)
+        var(--violet-blue),
+        var(--persian-blue)
     );
     border-radius: 50%;
 }
@@ -77,6 +98,7 @@ h1.result {
     font-size: 5rem;
     font-weight: 800;
     line-height: 1;
+    color: var(--white);
 }
 
 h2 {
@@ -97,53 +119,52 @@ h2 {
 }
 
 .blue {
-    background: rgb(69, 82, 201, 0.4);
+    background: hsl(var(--cobalt-blue), 0.3);
 }
 
 .blue svg {
-    stroke: rgb(69, 82, 201);
+    stroke: hsl(var(--cobalt-blue));
 }
 
 .blue .summary-item-title {
-    color: rgb(69, 82, 201);
+    color: hsl(var(--cobalt-blue));
 }
 
 .green {
-    background: rgb(87, 175, 154, 0.4);
+    background: hsl(var(--green-teal), 0.3);
 }
 
 .green svg {
-    stroke: rgb(87, 175, 154);
+    stroke: hsl(var(--green-teal));
 }
 
 .green .summary-item-title {
-    color: rgb(87, 175, 154);
+    color: hsl(var(--green-teal));
 }
 
 .red {
-    background: rgb(221, 115, 114, 0.4);
+    background: hsl(var(--light-red), 0.3);
 }
 
 .red svg {
-    stroke: rgb(221, 115, 114);
+    stroke: hsl(var(--light-red));
 }
 
 .red .summary-item-title {
-    color: rgb(221, 115, 114);
+    color: hsl(var(--light-red));
 }
 
 .orange {
-    background: rgb(219, 170, 65, 0.4);
+    background: hsl(var(--orangey-yellow), 0.3);
 }
 
 .orange svg {
-    stroke: rgb(219, 170, 65);
+    stroke: hsl(var(--orangey-yellow));
 }
 
 .orange .summary-item-title {
-    color: rgb(219, 170, 65);
+    color: hsl(var(--orangey-yellow));
 }
-
 
 .flexed {
     display: flex;
@@ -152,10 +173,9 @@ h2 {
     flex-wrap: wrap;
 }
 
-.summary-item-title {
-    color: green;
+/* .summary-item-title {
     font-weight: 700;
-}
+} */
 
 .summary-score {
     font-weight: 800;
@@ -172,17 +192,10 @@ h2 {
     background: rgb(48, 59, 90);
     padding: 1rem 2rem;
     border: 0;
-    border-radius: 100vw;
+    border-radius: 420vw;
     cursor: pointer;
 }
 
 .button:hover {
-    background: linear-gradient(to bottom, var(--blue), var(--dark-blue));
+    background: var(--background-gradient);
 }
-
-/* 
-blue rgb(69,82,201)
-green rgb(87,175,154)
-orange rgb(219,170,65)
-red rgb(221,115,114)
-*/
