@@ -38,7 +38,6 @@ h1 {
     grid-template-columns: 1fr 1fr;
     margin: 0 1rem;
     max-width: 45em;
-    display: flex;
     border-radius: 2rem;
     box-shadow: 0.5rem 1rem 3rem rgb(48, 59, 90, 0.2);
 }
@@ -132,4 +131,8 @@ h2 {
     border: 0;
     border-radius: 100vw;
     cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, var(--blue), var(--dark-blue));
 }
