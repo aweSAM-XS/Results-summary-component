@@ -4,12 +4,14 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ## Table of contents
 
+[Frontend Mentor - Results summary component solution](#frontend-mentor---results-summary-component-solution)
+- [Frontend Mentor - Results summary component solution](#frontend-mentor---results-summary-component-solution)
+  - [Table of contents](#table-of-contents)
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
     - [Links](#links)
     - [Built with](#built-with)
-    - [Author](#author)
-    - [Acknowledgments](#acknowledgments)
+  - [Author](#author)
 
 ### The challenge
 
@@ -20,14 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![](./Screenshot.png)
 
 ### Links
 
 -   [Solution URL](https://github.com/aweSAM-XS/Results-summary-component)
--   [Live Site URL](https://results-summary.netlify.app)
+-   [Live Site URL](https://results-component.netlify.app/)
 
 ### Built with
 
@@ -41,6 +41,4 @@ Add a screenshot of your solution. The easiest way to do this is to use Firefox 
 
 -   Website - [awesam.tech](https://awesam.tech)
 -   Frontend Mentor - [@awesam-xs](https://www.frontendmentor.io/profile/awesam-xs)
--   Twitter - [@_samuelkiprop_](https://www.twitter.com/_samuelkiprop_)
-
-## Acknowledgments
+-   Twitter - [@aweSAM](https://www.twitter.com/____awesam____)
